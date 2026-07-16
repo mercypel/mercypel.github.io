@@ -1,304 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ifeoluwa Mercy Pelumi — Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Ifeoluwa Mercy Pelumi | Data Science & Analytics Portfolio</title>
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f4f6fc;
-      color: #333;
-      display: flex;
-    }
+<link rel="icon" type="image/png" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/favicon-32x32.png">
 
-    /* Sidebar */
-    .sidebar {
-      width: 250px;
-      background: linear-gradient(135deg, #4b2aff, #8a2be2);
-      color: white;
-      padding: 30px 20px;
-      height: 100vh;
-      position: fixed;
-    }
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
-    .sidebar h2 {
-      font-size: 1.4rem;
-      margin-bottom: 20px;
-    }
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
+<!-- Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
 
-    .sidebar ul li {
-      margin: 15px 0;
-    }
-
-    .sidebar ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .social-icons img {
-      width: 30px;
-      margin: 10px 5px;
-    }
-
-    /* Main content */
-    .main {
-      margin-left: 250px;
-      padding: 40px;
-      flex: 1;
-    }
-
-    .banner {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #4b2aff;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      color: #4b2aff;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #007bff;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 15px;
-    }
-
-    h2 {
-      color: #4b2aff;
-      margin-top: 40px;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 20px;
-    }
-
-    .project-card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease;
-      text-align: center;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-card a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    /* Contact Form */
-    .contact-section {
-      margin-top: 50px;
-      padding: 30px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-
-    .contact-section input,
-    .contact-section textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-
-    .contact-section button {
-      margin-top: 15px;
-      padding: 12px 25px;
-      background: #4b2aff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-      margin-top: 40px;
-    }
-  </style>
 </head>
 
 <body>
 
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>Quick Links</h2>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Core Skills</a></li>
-      <li><a href="#projects">Portfolio</a></li>
-      <li><a href="MercyPelumi_CV.pdf" download>My Resume</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-    </ul>
+<!-- HEADER -->
+<header>
+<div class="container">
+<h1>Ifeoluwa Mercy Pelumi</h1>
+<p>Data Scientist | Senior Data Analyst | Machine Learning Engineer</p>
 
-    <h2>Find Me On</h2>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/mercy-pelumi-6b134a124/" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn">
-      </a>
-    </div>
-  </div>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/mercy-pelumi-6b134a124/" target="_blank" title="LinkedIn">
+<i class="fab fa-linkedin"></i></a>
 
-  <!-- Main Content -->
-  <div class="main">
-    <div class="banner">
-      <img src="profile.jpeg" alt="Profile Photo" class="profile-pic">
-      <h1>Ifeoluwa Mercy Pelumi</h1>
-      <p>Data Scientist • Senior Data Analyst • Machine Learning Engineer</p>
-      <a href="MercyPelumi_CV.pdf" class="btn" download>Download My CV</a>
-    </div>
-
-    <!-- About Me -->
-    <div id="about">
-      <h2>About Me</h2>
-      <p>I’m a passionate data scientist and senior analyst with expertise in machine learning, predictive modelling, and building impactful dashboards. I combine technical depth with strategic insight to deliver solutions that drive real-world outcomes.</p>
-    </div>
-
-    <!-- Core Skills -->
-    <div id="skills">
-      <h2>Core Skills</h2>
-      <ul>
-        <li>Python, R, SQL, Power BI, Microsoft Fabric</li>
-        <li>Machine Learning (XGBoost, Decision Trees, Regression)</li>
-        <li>Data Strategy, Governance, and Analytics Leadership</li>
-        <li>Dashboard Design & KPI Reporting</li>
-      </ul>
-    </div>
-
-    <!-- Projects -->
-    <div id="projects">
-      <h2>🔬 Data Science Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <a href="https://mercypel.github.io/Data-Science-Project-1/" target="_blank">
-            Project 1 — Product Sales & Weather Analysis
-          </a>
-          <p>Predictive modelling using regression and decision trees.</p>
-        </div>
-        <div class="project-card">
-          <a href="https://mercypel.github.io/Data-Science-Project-2/" target="_blank">
-            Project 2 — Application Risk Classification
-          </a>
-          <p>High‑risk vs low‑risk classification using XGBoost.</p>
-        </div>
-      </div>
-
-      <h2>📊 Data Analyst Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <a href="https://mercypel.github.io/BrightCart/" target="_blank">
-            BrightCart — Customer Behaviour Analysis
-          </a>
-          <p>Segmentation, KPIs, dashboards, and insight generation.</p>
-        </div>
-        <div class="project-card">
-          <a href="https://mercypel.github.io/AfriTech/" target="_blank">
-            AfriTech — Sales & Operations Dashboard
-          </a>
-          <p>Power BI dashboards and business reporting.</p>
-        </div>
-        <div class="project-card">
-          <a href="https://mercypel.github.io/TechInnovators/" target="_blank">
-            Tech Innovators — Market & Product Analytics
-          </a>
-          <p>Exploratory analysis and business intelligence.</p>
-        </div>
-      </div>
-    </div>
-
-   <!-- Contact -->
-<div class="contact-section" id="contact">
-  <h2>📨 Contact Me</h2>
-  <form action="https://formspree.io/f/xrenenvr" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+<a href="MercyPelumi_CV.pdf" download title="Download CV">
+<i class="fas fa-file-arrow-down"></i></a>
 </div>
 
-<style>
-  .contact-section {
-    margin-top: 50px;
-    padding: 30px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  }
+</div>
+</header>
 
-  .contact-section input,
-  .contact-section textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    transition: border 0.3s ease;
-  }
+<!-- NAVIGATION -->
+<nav>
+<div class="container">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
 
-  .contact-section input:focus,
-  .contact-section textarea:focus {
-    border: 1px solid #4b2aff;
-    outline: none;
-  }
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="container">
+<h2>About Me</h2>
 
-  .contact-section button {
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: linear-gradient(135deg, #4b2aff, #8a2be2);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
+<div class="about-content">
+<img src="profile.jpeg" alt="Ifeoluwa Mercy Pelumi" class="profile-photo">
 
-  .contact-section button:hover {
-    background: linear-gradient(135deg, #3a1fd0, #6a1bbf);
-    transform: translateY(-2px);
-  }
-</style>
+<div class="about-text">
+<p>I’m a data scientist and senior analyst with expertise in machine learning, predictive modelling, and building impactful dashboards. I combine technical depth with strategic insight to deliver solutions that drive real-world outcomes.</p>
 
+<p>I specialise in Python, R, SQL, Power BI, and Microsoft Fabric — developing models, dashboards, and data strategies that help organisations make confident, evidence‑based decisions.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+<div class="container">
+<h2>My Projects</h2>
+
+<div class="projects-grid">
+
+<!-- DATA SCIENCE PROJECT 1 -->
+<div class="project-card">
+<img src="assets/images/project-placeholder-1.jpg" alt="Project Preview">
+<div class="project-card-content">
+<h3>Product Sales & Weather Analysis (R + SQL)</h3>
+<p>Predictive modelling using regression and decision trees to analyse how weather impacts product sales.</p>
+<div class="project-buttons">
+<a href="https://mercypel.github.io/Data-Science-Project-1/" target="_blank" class="btn">View Project</a>
+</div>
+</div>
+</div>
+
+<!-- DATA SCIENCE PROJECT 2 -->
+<div class="project-card">
+<img src="assets/images/project-placeholder-2.jpg" alt="Project Preview">
+<div class="project-card-content">
+<h3>Application Risk Classification (XGBoost)</h3>
+<p>High‑risk vs low‑risk classification using XGBoost with 93.2% precision and 98.2% recall.</p>
+<div class="project-buttons">
+<a href="https://mercypel.github.io/Data-Science-Project-2/" target="_blank" class="btn">View Project</a>
+</div>
+</div>
+</div>
+
+<!-- DATA ANALYST PROJECT 1 -->
+<div class="project-card">
+<img src="assets/images/project-placeholder-3.jpg" alt="Project Preview">
+<div class="project-card-content">
+<h3>BrightCart — Customer Behaviour Analysis</h3>
+<p>Segmentation, KPIs, dashboards, and insight generation for retail customer behaviour.</p>
+<div class="project-buttons">
+<a href="https://mercypel.github.io/BrightCart/" target="_blank" class="btn">View Project</a>
+</div>
+</div>
+</div>
+
+<!-- DATA ANALYST PROJECT 2 -->
+<div class="project-card">
+<img src="assets/images/project-placeholder-4.jpg" alt="Project Preview">
+<div class="project-card-content">
+<h3>AfriTech — Sales & Operations Dashboard</h3>
+<p>Power BI dashboards and business reporting for operational performance.</p>
+<div class="project-buttons">
+<a href="https://mercypel.github.io/AfriTech/" target="_blank" class="btn">View Project</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+<div class="container">
+<h2>Technical Skillset</h2>
+
+<div class="skills-table">
+
+<div class="skill-column">
+<div class="skill-header">
+<i class="fas fa-chart-pie"></i>
+<h3>Data Visualization</h3>
+</div>
+<ul class="skill-list">
+<li>Power BI</li>
+<li>Tableau</li>
+<li>Looker Studio</li>
+<li>Excel Dashboards</li>
+</ul>
+</div>
+
+<div class="skill-column">
+<div class="skill-header">
+<i class="fas fa-search-plus"></i>
+<h3>Data Analysis</h3>
+</div>
+<ul class="skill-list">
+<li>Python (Pandas, Scikit‑Learn)</li>
+<li>R Programming</li>
+<li>SQL</li>
+<li>Advanced Excel</li>
+</ul>
+</div>
+
+<div class="skill-column">
+<div class="skill-header">
+<i class="fas fa-cogs"></i>
+<h3>Data Modeling & ETL</h3>
+</div>
+<ul class="skill-list">
+<li>Power Query (M)</li>
+<li>DAX</li>
+<li>Star Schema Design</li>
+<li>ETL Pipelines</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<div class="container">
+<h2>Send me a message</h2>
+
+<form action="https://formspree.io/f/xrenenvr" method="POST" class="contact-form">
+
+<p>Interested in collaborating or have questions about my work? I'd love to hear from you.</p>
+
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Your name" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="Your email" required>
+</div>
+
+<div class="form-group">
+<label for="subject">Subject</label>
+<input type="text" name="subject" id="subject" placeholder="Subject" required>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
+</div>
+
+<button type="submit" class="btn">Send Message</button>
+
+</form>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<p>&copy; 2026 Ifeoluwa Mercy Pelumi. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
