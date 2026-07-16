@@ -13,22 +13,54 @@
       margin: 0;
       background: #f4f6fc;
       color: #333;
+      display: flex;
     }
 
-    /* Custom Theme */
-    :root {
-      --primary: #4b2aff;
-      --secondary: #8a2be2;
-      --accent: #007bff;
-      --light-bg: #ffffff;
-      --card-shadow: rgba(0,0,0,0.08);
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(135deg, #4b2aff, #8a2be2);
+      color: white;
+      padding: 30px 20px;
+      height: 100vh;
+      position: fixed;
+    }
+
+    .sidebar h2 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+
+    .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .social-icons img {
+      width: 30px;
+      margin: 10px 5px;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 250px;
+      padding: 40px;
+      flex: 1;
     }
 
     .banner {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 120px 20px 80px;
       text-align: center;
+      margin-bottom: 40px;
     }
 
     .profile-pic {
@@ -36,21 +68,27 @@
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
+      border: 4px solid #4b2aff;
       margin-bottom: 20px;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      background: var(--light-bg);
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px var(--card-shadow);
+    h1 {
+      color: #4b2aff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #007bff;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 15px;
     }
 
     h2 {
-      color: var(--primary);
+      color: #4b2aff;
       margin-top: 40px;
     }
 
@@ -65,7 +103,7 @@
       background: #fff;
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 4px 20px var(--card-shadow);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       transition: transform 0.2s ease;
       text-align: center;
     }
@@ -76,32 +114,9 @@
 
     .project-card a {
       text-decoration: none;
-      color: var(--accent);
+      color: #007bff;
       font-weight: 600;
       font-size: 1.1rem;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: var(--accent);
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 15px;
-    }
-
-    /* Social Icons */
-    .social-icons {
-      margin-top: 20px;
-    }
-
-    .social-icons img {
-      width: 40px;
-      margin: 0 10px;
-      cursor: pointer;
     }
 
     /* Contact Form */
@@ -110,7 +125,7 @@
       padding: 30px;
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 20px var(--card-shadow);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     }
 
     .contact-section input,
@@ -126,7 +141,7 @@
     .contact-section button {
       margin-top: 15px;
       padding: 12px 25px;
-      background: var(--primary);
+      background: #4b2aff;
       color: white;
       border: none;
       border-radius: 8px;
@@ -145,87 +160,92 @@
 
 <body>
 
-  <div class="banner">
-    <img src="profile.jpeg" alt="Profile Photo" class="profile-pic">
-    <h1>Ifeoluwa Mercy Pelumi</h1>
-    <p>Data Scientist • Senior Data Analyst • Machine Learning Engineer</p>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Core Skills</a></li>
+      <li><a href="#projects">Portfolio</a></li>
+      <li><a href="MercyPelumi_CV.pdf" download>My Resume</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
 
-    <a href="CV.pdf" class="btn" download>Download My CV</a>
-
+    <h2>Find Me On</h2>
     <div class="social-icons">
-      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HERE" target="_blank">
+      <a href="https://www.linkedin.com/in/mercy-pelumi-6b134a124/" target="_blank">
         <img src="linkedin.png" alt="LinkedIn">
       </a>
     </div>
   </div>
 
-  <div class="container">
-
-    <!-- DATA SCIENCE PROJECTS FIRST -->
-    <h2>🔬 Data Science Projects</h2>
-
-    <div class="project-grid">
-
-      <div class="project-card">
-        <a href="https://mercypel.github.io/Data-Science-Project-1/" target="_blank">
-          Project 1 — Product Sales & Weather Analysis (R + SQL)
-        </a>
-        <p>Predictive modelling using linear regression and decision trees.</p>
-      </div>
-
-      <div class="project-card">
-        <a href="https://mercypel.github.io/Data-Science-Project-2/" target="_blank">
-          Project 2 — Application Risk Classification (XGBoost)
-        </a>
-        <p>High‑risk vs low‑risk classification using XGBoost.</p>
-      </div>
-
+  <!-- Main Content -->
+  <div class="main">
+    <div class="banner">
+      <img src="profile.jpeg" alt="Profile Photo" class="profile-pic">
+      <h1>Ifeoluwa Mercy Pelumi</h1>
+      <p>Data Scientist • Senior Data Analyst • Machine Learning Engineer</p>
+      <a href="MercyPelumi_CV.pdf" class="btn" download>Download My CV</a>
     </div>
 
-    <!-- DATA ANALYST PROJECTS BELOW -->
-    <h2>📊 Data Analyst Projects</h2>
-
-    <div class="project-grid">
-
-      <div class="project-card">
-        <a href="https://mercypel.github.io/BrightCart/" target="_blank">
-          BrightCart — Customer Behaviour Analysis
-        </a>
-        <p>Segmentation, KPIs, dashboards, and insight generation.</p>
-      </div>
-
-      <div class="project-card">
-        <a href="https://mercypel.github.io/AfriTech/" target="_blank">
-          AfriTech — Sales & Operations Dashboard
-        </a>
-        <p>Power BI dashboards and business reporting.</p>
-      </div>
-
-      <div class="project-card">
-        <a href="https://mercypel.github.io/TechInnovators/" target="_blank">
-          Tech Innovators — Market & Product Analytics
-        </a>
-        <p>Exploratory analysis and business intelligence.</p>
-      </div>
-
+    <!-- About Me -->
+    <div id="about">
+      <h2>About Me</h2>
+      <p>I’m a passionate data scientist and senior analyst with expertise in machine learning, predictive modelling, and building impactful dashboards. I combine technical depth with strategic insight to deliver solutions that drive real-world outcomes.</p>
     </div>
 
-    <!-- CONTACT FORM -->
+    <!-- Core Skills -->
+    <div id="skills">
+      <h2>Core Skills</h2>
+      <ul>
+        <li>Python, R, SQL, Power BI, Microsoft Fabric</li>
+        <li>Machine Learning (XGBoost, Decision Trees, Regression)</li>
+        <li>Data Strategy, Governance, and Analytics Leadership</li>
+        <li>Dashboard Design & KPI Reporting</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+      <h2>🔬 Data Science Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="https://mercypel.github.io/Data-Science-Project-1/" target="_blank">
+            Project 1 — Product Sales & Weather Analysis
+          </a>
+          <p>Predictive modelling using regression and decision trees.</p>
+        </div>
+        <div class="project-card">
+          <a href="https://mercypel.github.io/Data-Science-Project-2/" target="_blank">
+            Project 2 — Application Risk Classification
+          </a>
+          <p>High‑risk vs low‑risk classification using XGBoost.</p>
+        </div>
+      </div>
+
+      <h2>📊 Data Analyst Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="https://mercypel.github.io/BrightCart/" target="_blank">
+            BrightCart — Customer Behaviour Analysis
+          </a>
+          <p>Segmentation, KPIs, dashboards, and insight generation.</p>
+        </div>
+        <div class="project-card">
+          <a href="https://mercypel.github.io/AfriTech/" target="_blank">
+            AfriTech — Sales & Operations Dashboard
+          </a>
+          <p>Power BI dashboards and business reporting.</p>
+        </div>
+        <div class="project-card">
+          <a href="https://mercypel.github.io/TechInnovators/" target="_blank">
+            Tech Innovators — Market & Product Analytics
+          </a>
+          <p>Exploratory analysis and business intelligence.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
     <div class="contact-section" id="contact">
-      <h2>📨 Contact Me</h2>
-      <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    © 2026 — Portfolio by Ifeoluwa Mercy Pelumi
-  </div>
-
-</body>
-</html>
+      <h2>📨 Contact Me</h2
