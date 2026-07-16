@@ -246,6 +246,59 @@
       </div>
     </div>
 
-    <!-- Contact -->
-    <div class="contact-section" id="contact">
-      <h2>📨 Contact Me</h2
+   <!-- Contact -->
+<div class="contact-section" id="contact">
+  <h2>📨 Contact Me</h2>
+  <form action="https://formspree.io/f/xrenenvr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<style>
+  .contact-section {
+    margin-top: 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+
+  .contact-section input:focus,
+  .contact-section textarea:focus {
+    border: 1px solid #4b2aff;
+    outline: none;
+  }
+
+  .contact-section button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #4b2aff, #8a2be2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .contact-section button:hover {
+    background: linear-gradient(135deg, #3a1fd0, #6a1bbf);
+    transform: translateY(-2px);
+  }
+</style>
+
